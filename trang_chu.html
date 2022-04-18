@@ -11,6 +11,10 @@
     <!--Font awesome-->
     <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.css">
     <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+            integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+            crossorigin="anonymous"
+    ></script>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
@@ -52,15 +56,11 @@
             <div class="row">
                 <div class="col-md-12">
                     <nav class="navbar navbar-expand-lg navbar-light static-top nav-vn">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                        <!--<a class="navbar-brand" href="#">
-                            <img src="images/logo.png">
-                        </a>-->
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav menu-left">
-
                                 <li class="nav-item ">
                                     <a class="nav-link" href="#">Trang chủ</a>
                                 </li>
@@ -86,11 +86,10 @@
                                     <a class="nav-link" href="ho_tro.html">Hỗ trợ</a>
                                 </li>
                             </ul>
-                        </div>
-                        <div class="input-group bd-search">
-                            <input type="text" class="form-control" placeholder="Tìm kiếm">
-                            <img src="images/icon/search.svg" alt="">
-                            </svg>
+                            <div class="input-group bd-search">
+                                <input type="text" class="form-control" placeholder="Tìm kiếm">
+                                <img src="images/icon/search.svg" alt="">
+                            </div>
                         </div>
                     </nav>
                 </div>
@@ -252,11 +251,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row mb-4">
                         <div class="col-md-12 pt-3 banner">
-                            <a href="#" class="banner"><img class="mb-4 pe-3 " src="images/Group 317.png" alt=""></a>
-                            <a href="#" class="banner"><img class="mb-4 pe-3 " src="images/Group 317.png" alt=""></a>
-                            <a href="#" class="banner"><img class="mb-4 " src="images/Group 317.png" alt=""></a>
+                            <div class="row">
+                                <a href="#" class="col-md-4"><img src="images/Group 317.png" alt=""></a>
+                                <a href="#" class="col-md-4"><img src="images/Group 317.png" alt=""></a>
+                                <a href="#" class="col-md-4"><img src="images/Group 317.png" alt=""></a>
+                            </div>
                         </div>
                     </div>
                     <div class="row">
@@ -338,12 +339,11 @@
                         <img src="images/icon/letter.svg" alt="">phản ánh- kiến nghị, Hỏi đáp
                     </div>
                     <div class="row pt-3">
-                        <div class="col-md-3">
+                        <div class="col-md-3 d-flex flex-column flex-wrap">
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="section-title text-center red fs-5">
                                         Hỏi đáp trực tuyến
-
                                     </div>
                                     <div class="p-3">
                                         <p class="m-0 ps-2 pb-2 fs-5 fw-bold">Tổng số câu hỏi</p>
@@ -385,18 +385,15 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-md-12">
-
+                            <div class="row flex-fill">
+                                <div class="col-md-12 d-flex flex-wrap flex-column">
                                     <div class="section-title">
                                         <p class="m-0 ps-4">Nhóm vấn đề</p>
                                     </div>
-                                    <div class="ps-3 pt-2 border">
+                                    <div class="ps-3 pt-2 border flex-fill">
                                         <p class="m-0 ps-2 pb-2 fs-6 fw-bold">Việc làm</p>
                                         <p class="m-0 ps-2 pb-2 fs-6 fw-bold">Quan hệ lao động - Tiền lương</p>
                                         <p class="m-0 ps-2 pb-2 fs-6 fw-bold">Bảo hiểm xã hội</p>
-                                        <br><br><br><br><br>
-
                                     </div>
 
                                 </div>
@@ -404,107 +401,115 @@
 
                         </div>
                         <div class="col-md-9 no-padding">
+                            <div class="section-title ">
+                                <img src="images/icon/letter.svg" alt="">phản ánh- kiến nghị, Hỏi đáp
+                            </div>
                             <div class="row">
+                                <div class="col-md-12 py-4 search-home">
+                                    <h5 class="text-center">Tìm kiếm</h5>
+                                    <div class="row d-flex justify-content-center">
+                                        <h5 for="keyword" class=" p-0 mt-2 col-md-1 col-form-label text-center">Từ khoá</h5>
+                                        <div class="col-md-7 col-sm-7">
+                                            <input type="text" class="form-control" placeholder="Nhập từ khóa">
+                                        </div>
+                                </div>
+                                </div>
+
+                            </div>
+                            <div class="row ">
                                 <div class="col-md-12">
-                                    <div class="section-title ">
-                                        <img src="images/icon/letter.svg" alt="">phản ánh- kiến nghị, Hỏi đáp
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-12 py-4 search-home">
-                                            <h5 class="text-center">Tìm kiếm</h5>
-                                            <div class="row d-flex justify-content-center w-100">
-                                                <h5 for="keyword" class=" p-0 mt-2 col-md-1 col-form-label text-center">Từ khoá</h5>
-                                                    <div class="col-md-7">
-                                                        <input type="text" class="form-control" placeholder="Nhập từ khóa">
-                                                    </div>
-                                            </div>
-                                        </div>
+                                    <div class="table-scroll">
+                                        <table class="table table-bordered border border-1 fs-6 table-home">
+                                            <thead>
+                                            <tr class="thead-table text-center fs-5">
+                                                <th scope="col table-warning" class="p-3">STT</th>
+                                                <th scope="col table-warning" class="p-3">Câu hỏi</th>
+                                                <th scope="col table-warning" class="p-3">Người hỏi</th>
+                                                <th scope="col table-warning" class="p-3">Ngày hỏi</th>
+                                                <th scope="col table-warning" class="p-3">Bộ phận trả lời</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody class=" text-center">
+                                            <tr>
+                                                <th scope="row" class="p-3">1</th>
+                                                <td class="p-3">Đăng ký nội quy lao động sau sửa đổi</td>
+                                                <td class="p-3">Admin</td>
+                                                <td class="p-3">@26/9/2020</td>
+                                                <td class="p-3">BBT Cổng thông tin điện tử</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="p-3">2</th>
+                                                <td class="p-3">Đăng ký nội quy lao động sau sửa đổi</td>
+                                                <td class="p-3">Admin</td>
+                                                <td class="p-3">@26/9/2020</td>
+                                                <td class="p-3">BBT Cổng thông tin điện tử</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="p-3">3</th>
+                                                <td class="p-3">Đăng ký nội quy lao động sau sửa đổi</td>
+                                                <td class="p-3">@26/9/2020</td>
+                                                <td class="p-3">Admin</td>
+                                                <td class="p-3">BBT Cổng thông tin điện tử</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="p-3">4</th>
+                                                <td class="p-3">Đăng ký nội quy lao động sau sửa đổi</td>
+                                                <td class="p-3">@26/9/2020</td>
+                                                <td class="p-3">Admin</td>
+                                                <td class="p-3">BBT Cổng thông tin điện tử</td>
+                                            </tr>
+                                            </tbody>
 
+                                        </table>
                                     </div>
-                                    <div class="row ">
-                                        <div class="col-md-12">
-                                            <table class="table table-bordered border border-1 fs-6 table-home">
-                                                <thead>
-                                                    <tr class="thead-table text-center fs-5">
-                                                        <th scope="col table-warning" class="p-3">STT</th>
-                                                        <th scope="col table-warning" class="p-3">Câu hỏi</th>
-                                                        <th scope="col table-warning" class="p-3">Người hỏi</th>
-                                                        <th scope="col table-warning" class="p-3">Ngày hỏi</th>
-                                                        <th scope="col table-warning" class="p-3">Bộ phận trả lời</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody class=" text-center">
-                                                    <tr>
-                                                        <th scope="row" class="p-3">1</th>
-                                                        <td class="p-3">Đăng ký nội quy lao động sau sửa đổi</td>
-                                                        <td class="p-3">Admin</td>
-                                                        <td class="p-3">@26/9/2020</td>
-                                                        <td class="p-3">BBT Cổng thông tin điện tử</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row" class="p-3">2</th>
-                                                        <td class="p-3">Đăng ký nội quy lao động sau sửa đổi</td>
-                                                        <td class="p-3">Admin</td>
-                                                        <td class="p-3">@26/9/2020</td>
-                                                        <td class="p-3">BBT Cổng thông tin điện tử</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row" class="p-3">3</th>
-                                                        <td class="p-3">Đăng ký nội quy lao động sau sửa đổi</td>
-                                                        <td class="p-3">@26/9/2020</td>
-                                                        <td class="p-3">Admin</td>
-                                                        <td class="p-3">BBT Cổng thông tin điện tử</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row" class="p-3">4</th>
-                                                        <td class="p-3">Đăng ký nội quy lao động sau sửa đổi</td>
-                                                        <td class="p-3">@26/9/2020</td>
-                                                        <td class="p-3">Admin</td>
-                                                        <td class="p-3">BBT Cổng thông tin điện tử</td>
-                                                    </tr>
-                                                </tbody>
-
-                                            </table>
-                                        </div>
-
+                                </div>
+                            </div>
+                            <div class="row pt-2 d-flex mx-3">
+                                <div class="col-md-12">
+                                    <div class="d-inline-flex justify-content-center paginate_home">
+                                        <p class="m-0 pe-2 fs-6">Số trang </p>
+                                        <select class="" aria-label="Default select example">
+                                            <option selected="">5</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
                                     </div>
-                                    <div class="row ">
-                                        <div class="col-md-2 d-flex justify-content-center paginate_home">
-                                            <p class="m-0 pe-2 fs-6">Số trang </p>
-                                            <select class="" aria-label="Default select example">
-                                                    <option selected="">5</option>
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                </select>
+                                    <div class="d-inline-flex justify-content-center paginate_home">
+                                        <p class="m-0 pe-2 fs-6">trang </p>
+                                        <input type="number" class="col-md-1" value="1">
+                                        <p class="m-0 pe-2 fs-6">/60 </p>
+                                        <div class="col-md-1 me-2">
+                                            <button type="text" class="w-100 h-100" value="1"><</button>
                                         </div>
-                                        <div class="col-md-4 d-flex justify-content-center paginate_home">
-                                            <p class="m-0 pe-2 fs-6">trang </p>
-                                            <input type="number" class="col-md-1" value="1">
-                                            <p class="m-0 pe-2 fs-6">/60 </p>
-                                            <div class="col-md-1 me-2">
-                                                <button type="text" class="w-100 h-100" value="1"><</button>
+                                        <div class="col-md-1">
+                                            <button type="text" class="w-100 h-100" value="1">></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row pt-5">
+                                <div class="col-md-12 d-flex justify-content-center pt-4 pb-5 mx-3">
+                                    <div class="list-btn list-btn-send">
+                                        <button class="btn-problem">
+                                            <div class="d-flex justify-content-center">
+                                                <div class="img-btn"></div>
+                                                <p class="m-0 pe-1">Các vấn đề thường gặp</p>
                                             </div>
-                                            <div class="col-md-1">
-                                                <button type="text" class="w-100 h-100" value="1">></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row pt-5">
-                                        <div class="col-md-12 d-flex justify-content-center pt-4">
-                                            <div class="list-btn ">
-                                                <button class="btn-problem">
-                                                    <div class="d-flex justify-content-center">
-                                                        <div class="img-btn"></div>
-                                                        <p class="m-0 pe-1">Các vấn đề thường gặp</p>
-                                                    </div>
-                                                </button>
-                                                <button class="btn-question">
-                                                    <div class="d-flex justify-content-center">
-                                                        <div class="img-btn"></div>
-                                                        <p class="m-0 pe-1">Gửi câu hỏi</p>
-                                                    </div>
-                                                </button>
+                                        </button>
+                                        <button class="btn-question dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <span class="img-btn"></span>
+                                            <p>Gửi câu hỏi</p>
+                                        </button>
+                                        <div class="dropdown-menu noti-btn" aria-labelledby="dropdownMenuButton2">
+                                            <h5>Thông báo</h5>
+                                            <div class="content">
+                                                <p>
+                                                    Chào mừng bạn đến với cổng thông tin <a href="#">Molisa.gov.vn!</a> <br/>
+                                                    Bạn đã tìm hiểu kỹ nội dung chưa? Có thắc mắc ở đâu không?
+                                                </p>
+                                                <a href="#">Gửi câu hỏi</a>
+                                                <a class="close-dropdown">Đóng</a>
                                             </div>
                                         </div>
                                     </div>
@@ -520,16 +525,17 @@
                         <img src="images/icon/letter.svg" alt="">FAQ - Các vấn đề thường gặp
                     </div>
                     <div class="row pt-3 mb-5">
-                        <div class="col-md-3">
+                        <div class="col-md-3 d-flex flex-wrap flex-column">
                             <div class="section-title ps-4 fs-5">
                                 Nhóm vấn đề
                             </div>
-                            <div class="pt-3 ps-2 border border h-100">
+                            <div class="pt-3 ps-2 border flex-fill">
                                 <p class="m-0 ps-2  fs-6 fw-bold">Việc làm <span class="text-danger">(100)</span></p>
                                 <ul>
                                     <li>
-                                        <p class="m-0 fs-6 ">Giấy phép lao động
-                                            <span class="text-danger">(3279)</span></p>
+                                        <p class="m-0 fs-6 ">
+                                            Giấy phép lao động<span class="text-danger">(3279)</span>
+                                        </p>
                                     </li>
                                     <li>
                                         <p class="m-0  fs-6"> Bảo hiểm thất nghiệp <span class="text-danger">(10)</span></p>
@@ -572,7 +578,7 @@
                                     </div>
                                     <div class="py-4 search-home">
                                         <h5 class="text-center">Tìm kiếm</h5>
-                                        <div class="row d-flex justify-content-center w-100">
+                                        <div class="row d-flex justify-content-center">
                                             <h5 for="keyword" class=" p-0 mt-2 col-md-1 col-form-label text-center">Từ khoá</h5>
                                             <div class="col-md-7">
                                                 <input type="text" class="form-control" placeholder="Nhập từ khóa">
@@ -607,44 +613,54 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row ">
-                                        <div class="col-md-2 d-flex justify-content-center paginate_home">
-                                            <p class="m-0 pe-2 fs-6">Số trang </p>
-                                            <select class="" aria-label="Default select example">
+                                    <div class="row pt-4 d-flex mx-3">
+                                        <div class="col-md-12">
+                                            <div class="d-inline-flex justify-content-center paginate_home">
+                                                <p class="m-0 pe-2 fs-6">Số trang </p>
+                                                <select class="" aria-label="Default select example">
                                                     <option selected="">5</option>
                                                     <option value="1">1</option>
                                                     <option value="2">2</option>
                                                     <option value="3">3</option>
                                                 </select>
-                                        </div>
-                                        <div class="col-md-4 d-flex justify-content-center paginate_home">
-                                            <p class="m-0 pe-2 fs-6">trang </p>
-                                            <input type="number" class="col-md-1" value="1">
-                                            <p class="m-0 pe-2 fs-6">/60 </p>
-                                            <div class="col-md-1 me-2">
-                                                <button type="text" class="w-100 h-100" value="1"><</button>
-
                                             </div>
-                                            <div class="col-md-1">
-                                                <button type="text" class="w-100 h-100" value="1">></button>
+                                            <div class="d-inline-flex justify-content-center paginate_home">
+                                                <p class="m-0 pe-2 fs-6">trang </p>
+                                                <input type="number" class="col-md-1" value="1">
+                                                <p class="m-0 pe-2 fs-6">/60 </p>
+                                                <div class="col-md-1 me-2">
+                                                    <button type="text" class="w-100 h-100" value="1"><</button>
+                                                </div>
+                                                <div class="col-md-1">
+                                                    <button type="text" class="w-100 h-100" value="1">></button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row pt-5">
-                                        <div class="col-md-12 d-flex justify-content-center pt-4 pb-5">
-                                            <div class="list-btn ">
+                                        <div class="col-md-12 d-flex justify-content-center pt-4 pb-5 mx-3">
+                                            <div class="list-btn list-btn-send">
                                                 <button class="btn-problem">
                                                     <div class="d-flex justify-content-center">
                                                         <div class="img-btn"></div>
                                                         <p class="m-0 pe-1">Các vấn đề thường gặp</p>
                                                     </div>
                                                 </button>
-                                                <button class="btn-question">
-                                                    <div class="d-flex justify-content-center">
-                                                        <div class="img-btn"></div>
-                                                        <p class="m-0 pe-1">Gửi câu hỏi</p>
-                                                    </div>
+                                                <button class="btn-question dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <span class="img-btn"></span>
+                                                    <p>Gửi câu hỏi</p>
                                                 </button>
+                                                <div class="dropdown-menu noti-btn" aria-labelledby="dropdownMenuButton2">
+                                                    <h5>Thông báo</h5>
+                                                    <div class="content">
+                                                        <p>
+                                                            Chào mừng bạn đến với cổng thông tin <a href="#">Molisa.gov.vn!</a> <br/>
+                                                            Bạn đã tìm hiểu kỹ nội dung chưa? Có thắc mắc ở đâu không?
+                                                        </p>
+                                                        <a href="#">Gửi câu hỏi</a>
+                                                        <a class="close-dropdown">Đóng</a>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

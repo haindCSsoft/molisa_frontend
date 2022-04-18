@@ -73,5 +73,7 @@ am4core.ready(function() {
 
     // Add cursor
 
-
+    $('.close-dropdown').on('click', function (e){
+        $('.noti-btn').toggleClass('close');
+    })
 }); // end am4core.ready()
