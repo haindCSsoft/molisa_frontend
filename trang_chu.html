@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cổng TTĐT Bộ Lao động- Thương binh và Xã hội</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <!--Font awesome-->
+    <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.css">
+    <!-- JS -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="header-top">
+                    <a class="navbar-brand" href="#">
+                        <h1>
+                            <img src="images/logo.png" alt="">
+                        </h1>
+                    </a>
+                    <div class="text-head">
+                        <p>Bộ lao động - Thương binh và xã hội</p>
+                        <p>Hệ thống thông tin bộ với người dân và doanh nghiệp</p>
+                    </div>
+                    <div class="nav-login">
+                        <button type="button" class="button-login"><a href="#">Đăng nhập</a></button>
+                        <button type="button" class="button-register"><a href="#">Đăng ký</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Nav menu-->
+    <div class="nav-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-expand-lg navbar-light static-top nav-vn">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <!--<a class="navbar-brand" href="#">
+                            <img src="images/logo.png">
+                        </a>-->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="navbar-nav menu-left">
+
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="#">Trang chủ</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navbarDarkDropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Phản ánh kiến nghị, câu hỏi
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                                        <a class="dropdown-item" href="phan_anh_kien_nghi_cau_hoi.html">Phản ánh 1</a>
+                                        <a class="dropdown-item" href="phan_anh_kien_nghi_cau_hoi2.html">Phản ánh 2</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="cu_tri_bdqh.html">Cử tri - ĐBQH</a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="ket_luan_thanh_tra.html">Kết luận thanh tra</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="faq.html">FAQ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="ho_tro.html">Hỗ trợ</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="input-group bd-search">
+                            <input type="text" class="form-control" placeholder="Tìm kiếm">
+                            <img src="images/icon/search.svg" alt="">
+                            </svg>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb -->
+    <div class="container bg-breadcrumb">
+        <div class="row">
+            <div class="col-md-12">
+                <nav>
+                    <ol class="breadcrumb">
+                        <li>
+                            <img src="images/icon/home.svg" alt="Trang chủ"><a href="trang-chu.html">Trang chủ</a>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="section-title">
+                                <img src="images/icon/chart-bar-regular 1.svg" alt="">Thống kê
+                            </div>
+                            <div id="chartdiv"></div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="section-title">
+                                <img src="images/icon/newspaper-regular 1.svg" alt="">Tin tức
+                            </div>
+                            <div class="scroll-menu home-menu">
+                                <div class="card mb-3 card-home mt-2">
+                                    <div class="row g-0 mb-3 ">
+                                        <div class="col-md-5">
+                                            <div class="card">
+                                                <img class="card-img" src="images/bg-black-ga2.png" alt="Bologna">
+                                                <div class="overlay p-1"></div>
+                                                <div class="card-img-overlay text-white">
+                                                    <a class="card-text">Mức đóng BHXH bắt buộc vào quỹ TNLĐ, BNN bằng 0% đến 30/6/2022</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="card-body">
+                                                <h5 class="card-title mb-1 ">
+                                                    <a href="#">Mức đóng BHXH bắt buộc vào quỹ TNLĐ, BNN bằng 0% đến 30/6/2022</a> </h5>
+                                                <p class="card-text m-0">Chị My (Hà Nội) có một cơ sở giết mổ gia súc. Thời gian gần đây, có một số lao động từ 16 đến 18 tuổi đến xin làm việc tại cơ sở của chị. . .Chị My (Hà Nội) có một cơ sở giết mổ gia súc. Thời gian gần đây,
+                                                    có một số lao động từ 16 đến 18 tuổi đến xin làm việc tại cơ sở của chị. . .</p>
+                                                <span class="card-date"> <img class="mb-1 me-1" src="images/icon/calendar.svg">15 Th11 2021</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row g-0 mb-3  ">
+                                        <div class="col-md-5">
+                                            <div class="card">
+                                                <img class="card-img" src="images/bg-black-ga2.png" alt="Bologna">
+                                                <div class="overlay p-1"></div>
+                                                <div class="card-img-overlay text-white">
+                                                    <a class="card-text">Mức đóng BHXH bắt buộc vào quỹ TNLĐ, BNN bằng 0% đến 30/6/2022</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="card-body">
+                                                <h5 class="card-title mb-1 ">
+                                                    <a href="#">Mức đóng BHXH bắt buộc vào quỹ TNLĐ, BNN bằng 0% đến 30/6/2022</a> </h5>
+                                                <p class="card-text m-0">Chị My (Hà Nội) có một cơ sở giết mổ gia súc. Thời gian gần đây, có một số lao động từ 16 đến 18 tuổi đến xin làm việc tại cơ sở của chị. . .Chị My (Hà Nội) có một cơ sở giết mổ gia súc. Thời gian gần đây,
+                                                    có một số lao động từ 16 đến 18 tuổi đến xin làm việc tại cơ sở của chị. . .</p>
+                                                <span class="card-date"><img class="mb-1 me-1" src="images/icon/calendar.svg">15 Th11 2021</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row g-0 mb-3  ">
+                                        <div class="col-md-5">
+                                            <div class="card">
+                                                <img class="card-img" src="images/bg-black-ga2.png" alt="Bologna">
+                                                <div class="overlay p-1"></div>
+                                                <div class="card-img-overlay text-white">
+                                                    <a class="card-text ">Mức đóng BHXH bắt buộc vào quỹ TNLĐ, BNN bằng 0% đến 30/6/2022</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="card-body">
+                                                <h5 class="card-title mb-1 ">
+                                                    <a href="#">Mức đóng BHXH bắt buộc vào quỹ TNLĐ, BNN bằng 0% đến 30/6/2022</a> </h5>
+                                                <p class="card-text m-0">Chị My (Hà Nội) có một cơ sở giết mổ gia súc. Thời gian gần đây, có một số lao động từ 16 đến 18 tuổi đến xin làm việc tại cơ sở của chị. . .Chị My (Hà Nội) có một cơ sở giết mổ gia súc. Thời gian gần đây,
+                                                    có một số lao động từ 16 đến 18 tuổi đến xin làm việc tại cơ sở của chị. . .</p>
+                                                <span class="card-date"> <img class="mb-1 me-1" src="images/icon/calendar.svg">15 Th11 2021</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row g-0 mb-3 ">
+                                        <div class="col-md-5">
+                                            <div class="card">
+                                                <img class="card-img" src="images/bg-black-ga2.png" alt="Bologna">
+                                                <div class="overlay p-1"></div>
+                                                <div class="card-img-overlay text-white">
+                                                    <a class="card-text">Mức đóng BHXH bắt buộc vào quỹ TNLĐ, BNN bằng 0% đến 30/6/2022</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="card-body">
+                                                <h5 class="card-title mb-1 ">
+                                                    <a href="#">Mức đóng BHXH bắt buộc vào quỹ TNLĐ, BNN bằng 0% đến 30/6/2022</a> </h5>
+                                                <p class="card-text m-0">Chị My (Hà Nội) có một cơ sở giết mổ gia súc. Thời gian gần đây, có một số lao động từ 16 đến 18 tuổi đến xin làm việc tại cơ sở của chị. . .Chị My (Hà Nội) có một cơ sở giết mổ gia súc. Thời gian gần đây,
+                                                    có một số lao động từ 16 đến 18 tuổi đến xin làm việc tại cơ sở của chị. . .</p>
+                                                <span class="card-date"><img class="mb-1 me-1" src="images/icon/calendar.svg">15 Th11 2021</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row g-0 mb-3  ">
+                                        <div class="col-md-5">
+                                            <div class="card">
+                                                <img class="card-img" src="images/bg-black-ga2.png" alt="Bologna">
+                                                <div class="overlay p-1"></div>
+                                                <div class="card-img-overlay text-white">
+                                                    <a class="card-text">Mức đóng BHXH bắt buộc vào quỹ TNLĐ, BNN bằng 0% đến 30/6/2022</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="card-body">
+                                                <h5 class="card-title mb-1 ">
+                                                    <a href="#">Mức đóng BHXH bắt buộc vào quỹ TNLĐ, BNN bằng 0% đến 30/6/2022</a> </h5>
+                                                <p class="card-text m-0">Chị My (Hà Nội) có một cơ sở giết mổ gia súc. Thời gian gần đây, có một số lao động từ 16 đến 18 tuổi đến xin làm việc tại cơ sở của chị. . .Chị My (Hà Nội) có một cơ sở giết mổ gia súc. Thời gian gần đây,
+                                                    có một số lao động từ 16 đến 18 tuổi đến xin làm việc tại cơ sở của chị. . .</p>
+                                                <span class="card-date"> <img class="mb-1 me-1" src="images/icon/calendar.svg">15 Th11 2021</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row g-0">
+                                        <div class="col-md-5">
+                                            <div class="card">
+                                                <img class="card-img" src="images/bg-black-ga2.png" alt="Bologna">
+                                                <div class="overlay p-1"></div>
+                                                <div class="card-img-overlay text-white">
+                                                    <a class="card-text">Mức đóng BHXH bắt buộc vào quỹ TNLĐ, BNN bằng 0% đến 30/6/2022</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="card-body">
+                                                <h5 class="card-title mb-1 ">
+                                                    <a href="#">Mức đóng BHXH bắt buộc vào quỹ TNLĐ, BNN bằng 0% đến 30/6/2022</a> </h5>
+                                                <p class="card-text m-0">Chị My (Hà Nội) có một cơ sở giết mổ gia súc. Thời gian gần đây, có một số lao động từ 16 đến 18 tuổi đến xin làm việc tại cơ sở của chị. . .Chị My (Hà Nội) có một cơ sở giết mổ gia súc. Thời gian gần đây,
+                                                    có một số lao động từ 16 đến 18 tuổi đến xin làm việc tại cơ sở của chị. . .</p>
+                                                <span class="card-date"> <img class="mb-1 me-1" src="images/icon/calendar.svg">15 Th11 2021</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 pt-3 banner">
+                            <a href="#" class="banner"><img class="mb-4 pe-3 " src="images/Group 317.png" alt=""></a>
+                            <a href="#" class="banner"><img class="mb-4 pe-3 " src="images/Group 317.png" alt=""></a>
+                            <a href="#" class="banner"><img class="mb-4 " src="images/Group 317.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12  ">
+                            <a href="#"><img class=" mw-100" src="images/image 6.png" alt=""></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-3">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="sidebar-home">
+                                <a href="#"><img class="mb-4 w-100" src="images/8017.png" alt=""></a>
+                                <a href="#"><img class="mb-4 w-100" src="images/Artboard 1 copy.png" alt=""></a>
+                                <a href="#"><img class="mb-4 w-100" src="images/Artboard 1 copy 2.png" alt=""></a>
+                                <a href="#"><img class="mb-4 w-100" src="images/1 8.png" alt=""></a>
+                                <a href="#"><img class="mb-4 w-100" src="images/2 9.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 ">
+                            <div class="section-title">
+                                <img src="images/icon/letter.svg" alt="">Kiến nghị trả lời mới nhất
+                            </div>
+                            <div class="scroll-menu home">
+                                <ul>
+                                    <li>
+                                        <a href="#">Đây là chính sách giảm mức đóng bảo hiểm tai nạn lao động, bệnh . . .</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Đây là chính sách giảm mức đóng bảo hiểm tai nạn lao động, bệnh . . .</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Đây là chính sách giảm mức đóng bảo hiểm tai nạn lao động, bệnh . . .</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Đây là chính sách giảm mức đóng bảo hiểm tai nạn lao động, bệnh . . .</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Đây là chính sách giảm mức đóng bảo hiểm tai nạn lao động, bệnh . . .</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row pt-3">
+                        <div class="col-md-12">
+                            <div class="section-title">
+                                <img src="images/icon/letter.svg" alt="">Câu hỏi trả lời mới nhất
+                            </div>
+                            <div class="scroll-menu home">
+                                <ul>
+                                    <li>
+                                        <a href="#">Đây là chính sách giảm mức đóng bảo hiểm tai nạn lao động, bệnh . . .</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Đây là chính sách giảm mức đóng bảo hiểm tai nạn lao động, bệnh . . .</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Đây là chính sách giảm mức đóng bảo hiểm tai nạn lao động, bệnh . . .</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Đây là chính sách giảm mức đóng bảo hiểm tai nạn lao động, bệnh . . .</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Đây là chính sách giảm mức đóng bảo hiểm tai nạn lao động, bệnh . . .</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-5">
+                <div class="col-md-12">
+                    <div class="section-title fs-5">
+                        <img src="images/icon/letter.svg" alt="">phản ánh- kiến nghị, Hỏi đáp
+                    </div>
+                    <div class="row pt-3">
+                        <div class="col-md-3">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="section-title text-center red fs-5">
+                                        Hỏi đáp trực tuyến
+
+                                    </div>
+                                    <div class="p-3">
+                                        <p class="m-0 ps-2 pb-2 fs-5 fw-bold">Tổng số câu hỏi</p>
+                                        <ul>
+                                            <li>
+                                                <p class="m-0 fs-6 ">Câu hỏi đã trả lời: <span class="text-danger">3279</span></p>
+                                            </li>
+                                            <li>
+                                                <p class="m-0  fs-6">Câu hỏi chưa trả lời: <span class="text-danger">70</span></p>
+                                            </li>
+                                            <li>
+                                                <p class="m-0  fs-6">Câu hỏi không hợp lệ <span class="text-danger">4</span></p>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="section-title">
+                                        <p class="m-0 ps-4">Nội dung </p>
+                                    </div>
+                                    <div class="ps-3 pt-2 border">
+                                        <p class="m-0 ps-2 pb-2 fs-6 fw-bold">Phản ánh - kiến nghị</p>
+                                        <p class="m-0 ps-2 pb-2 fs-6 fw-bold">Hỏi đáp chính sách</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="section-title">
+                                        <p class="m-0 ps-4">Nhóm đối tượng</p>
+                                    </div>
+                                    <div class="ps-3 pt-2 border">
+                                        <p class="m-0 ps-2 pb-2 fs-6 fw-bold">Người dân</p>
+                                        <p class="m-0 ps-2 pb-2 fs-6 fw-bold">Doanh nghiệp</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+
+                                    <div class="section-title">
+                                        <p class="m-0 ps-4">Nhóm vấn đề</p>
+                                    </div>
+                                    <div class="ps-3 pt-2 border">
+                                        <p class="m-0 ps-2 pb-2 fs-6 fw-bold">Việc làm</p>
+                                        <p class="m-0 ps-2 pb-2 fs-6 fw-bold">Quan hệ lao động - Tiền lương</p>
+                                        <p class="m-0 ps-2 pb-2 fs-6 fw-bold">Bảo hiểm xã hội</p>
+                                        <br><br><br><br><br>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-9 no-padding">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="section-title ">
+                                        <img src="images/icon/letter.svg" alt="">phản ánh- kiến nghị, Hỏi đáp
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 py-4 search-home">
+                                            <h5 class="text-center">Tìm kiếm</h5>
+                                            <div class="row d-flex justify-content-center w-100">
+                                                <h5 for="keyword" class=" p-0 mt-2 col-md-1 col-form-label text-center">Từ khoá</h5>
+                                                    <div class="col-md-7">
+                                                        <input type="text" class="form-control" placeholder="Nhập từ khóa">
+                                                    </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="row ">
+                                        <div class="col-md-12">
+                                            <table class="table table-bordered border border-1 fs-6 table-home">
+                                                <thead>
+                                                    <tr class="thead-table text-center fs-5">
+                                                        <th scope="col table-warning" class="p-3">STT</th>
+                                                        <th scope="col table-warning" class="p-3">Câu hỏi</th>
+                                                        <th scope="col table-warning" class="p-3">Người hỏi</th>
+                                                        <th scope="col table-warning" class="p-3">Ngày hỏi</th>
+                                                        <th scope="col table-warning" class="p-3">Bộ phận trả lời</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody class=" text-center">
+                                                    <tr>
+                                                        <th scope="row" class="p-3">1</th>
+                                                        <td class="p-3">Đăng ký nội quy lao động sau sửa đổi</td>
+                                                        <td class="p-3">Admin</td>
+                                                        <td class="p-3">@26/9/2020</td>
+                                                        <td class="p-3">BBT Cổng thông tin điện tử</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row" class="p-3">2</th>
+                                                        <td class="p-3">Đăng ký nội quy lao động sau sửa đổi</td>
+                                                        <td class="p-3">Admin</td>
+                                                        <td class="p-3">@26/9/2020</td>
+                                                        <td class="p-3">BBT Cổng thông tin điện tử</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row" class="p-3">3</th>
+                                                        <td class="p-3">Đăng ký nội quy lao động sau sửa đổi</td>
+                                                        <td class="p-3">@26/9/2020</td>
+                                                        <td class="p-3">Admin</td>
+                                                        <td class="p-3">BBT Cổng thông tin điện tử</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row" class="p-3">4</th>
+                                                        <td class="p-3">Đăng ký nội quy lao động sau sửa đổi</td>
+                                                        <td class="p-3">@26/9/2020</td>
+                                                        <td class="p-3">Admin</td>
+                                                        <td class="p-3">BBT Cổng thông tin điện tử</td>
+                                                    </tr>
+                                                </tbody>
+
+                                            </table>
+                                        </div>
+
+                                    </div>
+                                    <div class="row ">
+                                        <div class="col-md-2 d-flex justify-content-center paginate_home">
+                                            <p class="m-0 pe-2 fs-6">Số trang </p>
+                                            <select class="" aria-label="Default select example">
+                                                    <option selected="">5</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                </select>
+                                        </div>
+                                        <div class="col-md-4 d-flex justify-content-center paginate_home">
+                                            <p class="m-0 pe-2 fs-6">trang </p>
+                                            <input type="number" class="col-md-1" value="1">
+                                            <p class="m-0 pe-2 fs-6">/60 </p>
+                                            <div class="col-md-1 me-2">
+                                                <button type="text" class="w-100 h-100" value="1"><</button>
+                                            </div>
+                                            <div class="col-md-1">
+                                                <button type="text" class="w-100 h-100" value="1">></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row pt-5">
+                                        <div class="col-md-12 d-flex justify-content-center pt-4">
+                                            <div class="list-btn ">
+                                                <button class="btn-problem">
+                                                    <div class="d-flex justify-content-center">
+                                                        <div class="img-btn"></div>
+                                                        <p class="m-0 pe-1">Các vấn đề thường gặp</p>
+                                                    </div>
+                                                </button>
+                                                <button class="btn-question">
+                                                    <div class="d-flex justify-content-center">
+                                                        <div class="img-btn"></div>
+                                                        <p class="m-0 pe-1">Gửi câu hỏi</p>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-5">
+                <div class="col-md-12">
+                    <div class="section-title fs-5">
+                        <img src="images/icon/letter.svg" alt="">FAQ - Các vấn đề thường gặp
+                    </div>
+                    <div class="row pt-3 mb-5">
+                        <div class="col-md-3">
+                            <div class="section-title ps-4 fs-5">
+                                Nhóm vấn đề
+                            </div>
+                            <div class="pt-3 ps-2 border border h-100">
+                                <p class="m-0 ps-2  fs-6 fw-bold">Việc làm <span class="text-danger">(100)</span></p>
+                                <ul>
+                                    <li>
+                                        <p class="m-0 fs-6 ">Giấy phép lao động
+                                            <span class="text-danger">(3279)</span></p>
+                                    </li>
+                                    <li>
+                                        <p class="m-0  fs-6"> Bảo hiểm thất nghiệp <span class="text-danger">(10)</span></p>
+                                    </li>
+                                </ul>
+                                <p class="m-0 ps-2 fs-6 fw-bold">Quan hệ lao động - tiền lương<span class="text-danger">(100)</span></p>
+                                <ul>
+                                    <li>
+                                        <p class="m-0 fs-6 ">Hợp đồng lao động
+
+                                    </li>
+                                    <li>
+                                        <p class="m-0  fs-6"> Thỏa ức lao động tập thể
+
+                                    </li>
+                                    <li>
+                                        <p class="m-0  fs-6"> Nội quy lao động </p>
+                                    </li>
+
+                                </ul>
+                                <p class="m-0 ps-2 fs-6 fw-bold">Bảo hiểm xã hội<span class="text-danger">(100)</span></p>
+                                <ul>
+                                    <li>
+                                        <p class="m-0 fs-6 ">Bảo hiểm xã hội tự nguyện
+
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="m-0  fs-6"> Tính đóng bảo hiểm </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-9 no-padding">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="section-title ">
+                                        <img src="images/icon/letter.svg" alt="">Các vấn đề thường gặp
+                                    </div>
+                                    <div class="py-4 search-home">
+                                        <h5 class="text-center">Tìm kiếm</h5>
+                                        <div class="row d-flex justify-content-center w-100">
+                                            <h5 for="keyword" class=" p-0 mt-2 col-md-1 col-form-label text-center">Từ khoá</h5>
+                                            <div class="col-md-7">
+                                                <input type="text" class="form-control" placeholder="Nhập từ khóa">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="accordion" id="accordionExample">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header mb-2" id="headingOne">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                                        Luật an toàn, vệ sinh lao động quy định như thế nào về quyền và nghĩa vụ về an toàn, vệ sinh lao động của người lao động?
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        Luật an toàn, vệ sinh lao động quy định như thế nào về quyền và nghĩa vụ về an toàn, vệ sinh lao động của người lao động?
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingTwo">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                        Luật an toàn, vệ sinh lao động quy định như thế nào về quyền và nghĩa vụ về an toàn, vệ sinh lao động của người lao động?
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        Luật an toàn, vệ sinh lao động quy định như thế nào về quyền và nghĩa vụ về an toàn, vệ sinh lao động của người lao động?
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row ">
+                                        <div class="col-md-2 d-flex justify-content-center paginate_home">
+                                            <p class="m-0 pe-2 fs-6">Số trang </p>
+                                            <select class="" aria-label="Default select example">
+                                                    <option selected="">5</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                </select>
+                                        </div>
+                                        <div class="col-md-4 d-flex justify-content-center paginate_home">
+                                            <p class="m-0 pe-2 fs-6">trang </p>
+                                            <input type="number" class="col-md-1" value="1">
+                                            <p class="m-0 pe-2 fs-6">/60 </p>
+                                            <div class="col-md-1 me-2">
+                                                <button type="text" class="w-100 h-100" value="1"><</button>
+
+                                            </div>
+                                            <div class="col-md-1">
+                                                <button type="text" class="w-100 h-100" value="1">></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row pt-5">
+                                        <div class="col-md-12 d-flex justify-content-center pt-4 pb-5">
+                                            <div class="list-btn ">
+                                                <button class="btn-problem">
+                                                    <div class="d-flex justify-content-center">
+                                                        <div class="img-btn"></div>
+                                                        <p class="m-0 pe-1">Các vấn đề thường gặp</p>
+                                                    </div>
+                                                </button>
+                                                <button class="btn-question">
+                                                    <div class="d-flex justify-content-center">
+                                                        <div class="img-btn"></div>
+                                                        <p class="m-0 pe-1">Gửi câu hỏi</p>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="brand-footer">
+                        <img src="images/logo.png" alt="">
+                        <p>BỘ LAO ĐỘNG - THƯƠNG BINH VÀ XÃ HỘI</p>
+                        <p>HỆ THỐNG THÔNG TIN BỘ VỚI NGƯỜI DÂN VÀ DOANH NGHIỆP</p>
+                    </div>
+                    <div class="address">
+                        <p>Địa chỉ: 12 Ngô Quyền, Phường Tràng Tiền, Quận Hoàn Kiếm, TP. Hà Nội<br/> Điện thoại: (024) 62703645 - Fax: (024) 6270 3609<br/> Email: tiepnhanykien@molisa.gov.vn
+                        </p>
+                    </div>
+                    <div class="copyright">
+                        © Bản quyền thuộc về Bộ Lao động - Thương binh và Xã hội
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Custom JS-->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

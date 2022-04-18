@@ -1,0 +1,4 @@
+# Don't check auto-generated stuff into git
+bower_components
+.idea
+.awcache

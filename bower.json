@@ -1,0 +1,24 @@
+{
+  "name": "vietnam",
+  "authors": [
+    "Hiep Nguyen Tien <mr.hiep.2018@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "bootstrap": ">=3.3.0",
+    "components-font-awesome": "^4.7.0",
+    "chart.js": "^2.7.3"
+  }
+}

@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cổng TTĐT Bộ Lao động- Thương binh và Xã hội</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <!--Font awesome-->
+    <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.css">
+    <!-- JS -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="header-top">
+                    <a class="navbar-brand" href="#">
+                        <h1>
+                            <img src="images/logo.png" alt="">
+                        </h1>
+                    </a>
+                    <div class="text-head">
+                        <p>Bộ lao động - Thương binh và xã hội</p>
+                        <p>Hệ thống thông tin bộ với người dân và doanh nghiệp</p>
+                    </div>
+                    <div class="nav-login">
+                        <button type="button" class="button-login"><a href="#">Đăng nhập</a></button>
+                        <button type="button" class="button-register"><a href="#">Đăng ký</a></button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Nav menu-->
+    <div class="nav-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-expand-lg navbar-light static-top nav-vn">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <!--<a class="navbar-brand" href="#">
+                            <img src="images/logo.png">
+                        </a>-->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="navbar-nav menu-left">
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="trang-chu.html">Trang chủ</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navbarDarkDropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Phản ánh kiến nghị, câu hỏi
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                                        <a class="dropdown-item" href="phan_anh_kien_nghi_cau_hoi.html">Phản ánh 1</a>
+                                        <a class="dropdown-item active" href="phan_anh_kien_nghi_cau_hoi2.html">Phản ánh 2</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="cu_tri_bdqh.html">Cử tri - ĐBQH</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="ket_luan_thanh_tra.html">Kết luận thanh tra</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="faq.html">FAQ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="ho_tro.html">Hỗ trợ</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="input-group bd-search">
+                            <input type="text" class="form-control" placeholder="Tìm kiếm">
+                            <img src="images/icon/search.svg" alt="">
+                            </svg>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb -->
+    <div class="container bg-breadcrumb">
+        <div class="row">
+            <div class="col-md-12">
+                <nav>
+                    <ol class="breadcrumb">
+                        <li>
+                            <img src="images/icon/home.svg" alt="Trang chủ"><a href="#">Trang chủ</a>
+                        </li>
+                        <li>
+                            <a href="#">Phản ánh kiến nghị</a>
+                        </li>
+                        <li>
+                            Gửi câu hỏi
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <img src="images/icon/newspaper.svg" alt="">MỌI PHẢN ÁNH - KIẾN NGHỊ, HỎI ĐÁP ĐỀU ĐƯỢC BỘ LĐTBXH LẮNG NGHE
+                    </div>
+                    <div class="form-question-tt">
+
+
+                        <h4>Phản ánh - kiến nghị, hỏi đáp của bạn sẽ được cơ quan có thẩm quyền tiếp nhận để trả lời.<br> Xin vui lòng gõ tiếng Việt có dấu</h4>
+                        <form action="POST" class="d-flex justify-content-center im">
+                            <div class="row justify-content-center w-100 mt-4">
+                                <label for="type" class="col-md-1 col-form-label">Đối tượng<span>(*)</span></label>
+                                <div class="col-md-7">
+                                    <select class="form-select" aria-label="Default select example" id="subject" name="subject">
+                                            <option value="nguoi-dan" selected>Người dân</option>
+                                            <option value="doanh-nghoep">Doanh nghiệp</option>
+                                        </select>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center w-100 mt-4">
+                                <label for="user" class="col-md-1 col-form-label">Người dân<span>(*)</span></label>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control" placeholder="Nhập họ tên người dân hoặc doanh nghiệp" id="user">
+                                </div>
+                            </div>
+                            <div class="row justify-content-center w-100 mt-4">
+                                <label for="keyword" class="col-md-1 col-form-label">Thư điện tử<span>(*)</span></label>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control" placeholder="Nhập địa chỉ điện tử" id="email" name="email">
+                                </div>
+                            </div>
+                            <div class="row justify-content-center w-100 mt-4">
+                                <label for="keyword" class="col-md-1 col-form-label">Số điện thoại<span>(*)</span></label>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control" placeholder="Nhập số điện thoại liên hệ" id="phone" name="phone">
+                                </div>
+                            </div>
+                            <div class="row justify-content-center w-100 mt-4">
+                                <label for="address" class="col-md-1 col-form-label">Địa chỉ liên hệ<span>(*)</span></label>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control" placeholder="Nhập địa chỉ liên hệ" id="address" name="address">
+                                    <div class="row mt-4">
+                                        <div class="col-md-4">
+                                            <select class="form-select" aria-label="Default select example" name="province" id="province">
+                                                    <option selected>Tỉnh/TP</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                </select>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <select class="form-select" aria-label="Default select example" name="country" id="country">
+                                                    <option selected>Quận huyện</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                </select>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <select class="form-select" aria-label="Default select example" name="wards" id="wards">
+                                                    <option selected>Phường xã</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row justify-content-center w-100 mt-4">
+                                <label for="type" class="col-md-1 col-form-label">Lĩnh vực</label>
+                                <div class="col-md-7">
+                                    <select class="form-select" aria-label="Default select example" id="type" name="type">
+                                        <option selected>Chọn lĩnh vực cần kiến nghị</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center w-100 mt-4">
+                                <label for="question" class="col-md-1 col-form-label">Câu hỏi<span>(*)</span></label>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control" placeholder="Nhập tiêu đề câu hỏi" name="question" id="question">
+                                </div>
+                            </div>
+                            <div class="row justify-content-center w-100 mt-4">
+                                <label for="content" class="col-md-1 col-form-label">Nội dung<span>(*)</span></label>
+                                <div class="col-md-7">
+                                    <textarea class="form-control" rows="7" placeholder="Nhập tóm tắt nội dung câu hỏi" id="content" name="content"></textarea>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center w-100 mt-4">
+                                <label for="myfile" class="col-md-1 col-form-label">File đính kèm</label>
+                                <div class="col-md-7">
+                                    <input type="file" id="myfile" name="myfile">
+                                </div>
+                            </div>
+                            <div class="row justify-content-center w-100 mt-4 mb-4">
+                                <label for="securityCode" class="col-md-1 col-form-label">Mã bảo mật<span>(*)</span></label>
+                                <div class="col-md-7">
+                                    <img src="/images/Capture 2.png" alt="">
+                                    <div class="row mt-4">
+                                        <div class="col-md-12">
+                                            <label for="securityCode" class="col-md-6 col-form-label">Nhập số bảo mật ở trên ( bắt buộc )</label>
+                                        </div>
+                                        <div class="col-md-6">
+
+                                            <input type="text" class="form-control" placeholder="Nhập mã bảo mật" id="securityCode">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-btn justify-content-center">
+                                <button type="submit" class="btn-search">Gửi kiến nghị</button>
+                                <button class="btn-clear">Nhập lại</button>
+                            </div>
+                        </form>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <img src="images/icon/newspaper.svg" alt="">PHẢN ÁNH - KIẾN NGHỊ, HỎI ĐÁP ĐÃ ĐƯỢC TRẢ LỜI
+                    </div>
+                    <div class="form-search-tt">
+                        <h4>Tìm kiếm phản ánh – kiến nghị, hỏi đáp đã trả lời</h4>
+                        <form action="POST" class="d-flex justify-content-center im">
+                            <div class="row justify-content-center w-100">
+                                <label for="keyword" class="col-md-1 col-form-label">Từ khoá</label>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control" placeholder="Nhập từ khóa" id="keyword">
+                                </div>
+                            </div>
+                            <div class="row justify-content-center w-100">
+                                <label for="keyword" class="col-md-1 col-form-label">Người dân</label>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control" placeholder="Nhập tên người dùng" id="name" name="name">
+                                </div>
+                            </div>
+                            <div class="row justify-content-center w-100">
+                                <label for="type" class="col-md-1 col-form-label">Lĩnh vực</label>
+                                <div class="col-md-7">
+                                    <select class="form-select" aria-label="Default select example" id="type-2" name>
+                                        <option selected>Tất cả</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row justify-content-center w-100">
+                                <label for="keyword" class="col-md-1 col-form-label">Mã tra cứu</label>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control" placeholder="Nhập mã tra cứu" id="code" name="code">
+                                </div>
+                            </div>
+
+                            <div class="list-btn justify-content-center">
+                                <button type="submit" class="btn-search">Tìm kiếm</button>
+                                <button class="btn-clear">Nhập lại</button>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row list-content list-answer">
+                <div class="col-md-6 ">
+                    <div class="section-title">
+                        <img src="images/icon/letter.svg" alt="">An toàn vệ sinh lao động
+                    </div>
+                    <div class="list-content-childs ">
+                        <ul class="list-group">
+                            <li class="list-group-item items-col6">
+                                <span>NGUYỄN HUỲNH MINH TIẾN - THÀNH PHỐ HÀ NỘI ( 16/02/2022 )</span>
+                                <p> <a href="#">Hỗ trợ người lao động ngừng việc không đủ điều kiện nhận trợ cấp thất nghiệp</a></p>
+                                <span class="break">Nội dung: Kính gửi sở lao động, Tôi gửi phản ánh kiến nghị như sau: Tôi đã nộp hồ sơ theo nghị quyết 68 về việc nhận hỗ trợ cho người lao động gặp khó khăn do đại dịch COVID-19 từ ngày 16/10/2021.
+                                </span>
+
+                            </li>
+                            <li class="list-group-item items-col6">
+                                <span>NGUYỄN HUỲNH MINH TIẾN - THÀNH PHỐ HÀ NỘI ( 16/02/2022 )</span>
+                                <p> <a href="#">Hỗ trợ người lao động ngừng việc không đủ điều kiện nhận trợ cấp thất nghiệp</a></p>
+                                <span class="break">Nội dung: Kính gửi sở lao động, Tôi gửi phản ánh kiến nghị như sau: Tôi đã nộp hồ sơ theo nghị quyết 68 về việc nhận hỗ trợ cho người lao động gặp khó khăn do đại dịch COVID-19 từ ngày 16/10/2021.
+                                </span>
+
+                            </li>
+                            <li class="list-group-item items-col6">
+                                <span>NGUYỄN HUỲNH MINH TIẾN - THÀNH PHỐ HÀ NỘI ( 16/02/2022 )</span>
+                                <p><a href="#">Hỗ trợ người lao động ngừng việc không đủ điều kiện nhận trợ cấp thất nghiệp</a></p>
+                                <span class="break">Nội dung: Kính gửi sở lao động, Tôi gửi phản ánh kiến nghị như sau: Tôi đã nộp hồ sơ theo nghị quyết 68 về việc nhận hỗ trợ cho người lao động gặp khó khăn do đại dịch COVID-19 từ ngày 16/10/2021.
+                                </span>
+
+                            </li>
+                            <li class="list-group-item items-col6">
+                                <span>NGUYỄN HUỲNH MINH TIẾN - THÀNH PHỐ HÀ NỘI ( 16/02/2022 )</span>
+                                <p><a href="#">Hỗ trợ người lao động ngừng việc không đủ điều kiện nhận trợ cấp thất nghiệp</a></p>
+                                <span class="break">Nội dung: Kính gửi sở lao động, Tôi gửi phản ánh kiến nghị như sau: Tôi đã nộp hồ sơ theo nghị quyết 68 về việc nhận hỗ trợ cho người lao động gặp khó khăn do đại dịch COVID-19 từ ngày 16/10/2021.
+                                </span>
+
+                            </li>
+                            <li class="list-group-item items-col6">
+                                <span>NGUYỄN HUỲNH MINH TIẾN - THÀNH PHỐ HÀ NỘI ( 16/02/2022 )</span>
+                                <p><a href="#">Hỗ trợ người lao động ngừng việc không đủ điều kiện nhận trợ cấp thất nghiệp</a></p>
+                                <span class="break">Nội dung: Kính gửi sở lao động, Tôi gửi phản ánh kiến nghị như sau: Tôi đã nộp hồ sơ theo nghị quyết 68 về việc nhận hỗ trợ cho người lao động gặp khó khăn do đại dịch COVID-19 từ ngày 16/10/2021.
+                                </span>
+
+                            </li>
+                        </ul>
+                        <div class="pagination">
+                            <a href="#">
+                                << </a>
+                                    <a href="#">
+                                        <</a>
+                                            <a href="#" class="active">1</a>
+                                            <a href="#">2</a>
+                                            <a href="#">3</a>
+                                            <a href="#">></a>
+                                            <a href="#">>></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <div class="section-title">
+                        <img src="images/icon/letter.svg" alt="">Trả lời chất vấn của đại biểu quốc hội
+                    </div>
+                    <div class="list-content-childs ">
+                        <ul class="list-group">
+                            <li class="list-group-item items-col6">
+                                <span>NGUYỄN HUỲNH MINH TIẾN - THÀNH PHỐ HÀ NỘI ( 16/02/2022 )</span>
+                                <p> <a href="#">Hỗ trợ người lao động ngừng việc không đủ điều kiện nhận trợ cấp thất nghiệp</a></p>
+                                <span class="break">Nội dung: Kính gửi sở lao động, Tôi gửi phản ánh kiến nghị như sau: Tôi đã nộp hồ sơ theo nghị quyết 68 về việc nhận hỗ trợ cho người lao động gặp khó khăn do đại dịch COVID-19 từ ngày 16/10/2021.
+                                </span>
+
+                            </li>
+                            <li class="list-group-item items-col6">
+                                <span>NGUYỄN HUỲNH MINH TIẾN - THÀNH PHỐ HÀ NỘI ( 16/02/2022 )</span>
+                                <p> <a href="#">Hỗ trợ người lao động ngừng việc không đủ điều kiện nhận trợ cấp thất nghiệp</a></p>
+                                <span class="break">Nội dung: Kính gửi sở lao động, Tôi gửi phản ánh kiến nghị như sau: Tôi đã nộp hồ sơ theo nghị quyết 68 về việc nhận hỗ trợ cho người lao động gặp khó khăn do đại dịch COVID-19 từ ngày 16/10/2021.
+                                </span>
+
+                            </li>
+                            <li class="list-group-item items-col6">
+                                <span>NGUYỄN HUỲNH MINH TIẾN - THÀNH PHỐ HÀ NỘI ( 16/02/2022 )</span>
+                                <p> <a href="#">Hỗ trợ người lao động ngừng việc không đủ điều kiện nhận trợ cấp thất nghiệp</a></p>
+                                <span class="break">Nội dung: Kính gửi sở lao động, Tôi gửi phản ánh kiến nghị như sau: Tôi đã nộp hồ sơ theo nghị quyết 68 về việc nhận hỗ trợ cho người lao động gặp khó khăn do đại dịch COVID-19 từ ngày 16/10/2021.
+                                </span>
+
+                            </li>
+                            <li class="list-group-item items-col6">
+                                <span>NGUYỄN HUỲNH MINH TIẾN - THÀNH PHỐ HÀ NỘI ( 16/02/2022 )</span>
+                                <p> <a href="#">Hỗ trợ người lao động ngừng việc không đủ điều kiện nhận trợ cấp thất nghiệp</a></p>
+                                <span class="break">Nội dung: Kính gửi sở lao động, Tôi gửi phản ánh kiến nghị như sau: Tôi đã nộp hồ sơ theo nghị quyết 68 về việc nhận hỗ trợ cho người lao động gặp khó khăn do đại dịch COVID-19 từ ngày 16/10/2021.
+                                </span>
+
+                            </li>
+                            <li class="list-group-item items-col6">
+                                <span>NGUYỄN HUỲNH MINH TIẾN - THÀNH PHỐ HÀ NỘI ( 16/02/2022 )</span>
+                                <p> <a href="#">Hỗ trợ người lao động ngừng việc không đủ điều kiện nhận trợ cấp thất nghiệp</a></p>
+                                <span class="break">Nội dung: Kính gửi sở lao động, Tôi gửi phản ánh kiến nghị như sau: Tôi đã nộp hồ sơ theo nghị quyết 68 về việc nhận hỗ trợ cho người lao động gặp khó khăn do đại dịch COVID-19 từ ngày 16/10/2021.
+                                </span>
+
+                            </li>
+                        </ul>
+                        <div class="pagination">
+                            <a href="#">
+                                << </a>
+                                    <a href="#">
+                                        <</a>
+                                            <a href="#" class="active">1</a>
+                                            <a href="#">2</a>
+                                            <a href="#">3</a>
+                                            <a href="#">></a>
+                                            <a href="#">>></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="brand-footer">
+                        <img src="images/logo.png" alt="">
+                        <p>BỘ LAO ĐỘNG - THƯƠNG BINH VÀ XÃ HỘI</p>
+                        <p>HỆ THỐNG THÔNG TIN BỘ VỚI NGƯỜI DÂN VÀ DOANH NGHIỆP</p>
+                    </div>
+                    <div class="address">
+                        <p>Địa chỉ: 12 Ngô Quyền, Phường Tràng Tiền, Quận Hoàn Kiếm, TP. Hà Nội<br/> Điện thoại: (024) 62703645 - Fax: (024) 6270 3609<br/> Email: tiepnhanykien@molisa.gov.vn
+                        </p>
+                    </div>
+                    <div class="copyright">
+                        © Bản quyền thuộc về Bộ Lao động - Thương binh và Xã hội
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Custom JS-->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
