@@ -62,7 +62,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-    width: calc(100% - 180px);
+    width: calc(100% - 250px);
 }
 
 .header-top .text-head p {
@@ -111,23 +111,21 @@ body {
 }
 
 .nav-login {
-    width: 180px;
+    width: 250px;
     display: flex;
     align-items: flex-end;
-}
+justify-content: flex-end;}
 
-.nav-login > button {
+.nav-login [class*="button-"] {
     background-color: rgba(0, 0, 0, 0.2);
     border: 0;
     border-radius: 5px;
-}
-
-.nav-login > button > a {
     font-weight: 500;
     line-height: 19px;
     font-size: 1rem;
     text-decoration: none;
     color: #FFFFFF;
+    padding: 2px 5px;
 }
 
 .button-login {
@@ -991,6 +989,11 @@ font-weight: 600;}
 .sidebar img{
     width: 100%;
 }
+.after-login{display: flex;}
+.after-login .user-login{margin-right: 10px;white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;width: 136px;}
+.after-login .user-login i{margin-right: 5px;}
 ::-webkit-scrollbar {
     width: 5px;
 }
