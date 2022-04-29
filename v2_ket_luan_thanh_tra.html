@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cổng TTĐT Bộ Lao động- Thương binh và Xã hội</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <!--Font awesome-->
+    <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.css">
+    <!-- JS -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="header-top">
+                    <a class="navbar-brand" href="#">
+                        <h1>
+                            <img src="images/logo.png" alt="">
+                        </h1>
+                    </a>
+                    <div class="text-head">
+                        <p>Bộ lao động - Thương binh và xã hội</p>
+                        <p>Hệ thống thông tin bộ với người dân và doanh nghiệp</p>
+                    </div>
+                    <div class="nav-login">
+                        <!--Before login-->
+                        <a href="http://localhost" class="button-login">Đăng nhập</a>
+                        <a href="#" class="button-login">Đăng ký</a>
+                        <!--After login-->
+                        <!--<form action="https://localhost.php" method="post" class="after-login">
+                            <div class="user-login"><i class="fa fa-user" aria-hidden="true"></i>Xin chào HHHHHHH,</div>
+                            <button class="button-login">Đăng xuất</button>
+                        </form>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Nav menu-->
+     <div class="nav-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-expand-lg navbar-light static-top nav-vn">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav menu-left">
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="#">Trang chủ</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navbarDarkDropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Phản ánh kiến nghị, câu hỏi
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                                        <a class="dropdown-item" href="phan_anh_kien_nghi_cau_hoi.html">Phản ánh 1</a>
+                                        <a class="dropdown-item" href="phan_anh_kien_nghi_cau_hoi2.html">Phản ánh 2</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="cu_tri_bdqh.html">Cử tri - ĐBQH</a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="ket_luan_thanh_tra.html">Kết luận thanh tra</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="faq.html">FAQ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="ho_tro.html">Hỗ trợ</a>
+                                </li>
+                            </ul>
+                            <div class="input-group bd-search">
+                                <input type="text" class="form-control" placeholder="Tìm kiếm">
+                                <img src="images/icon/search.svg" alt="">
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb -->
+    <div class="container bg-breadcrumb">
+        <div class="row">
+            <div class="col-md-12">
+                <nav>
+                    <ol class="breadcrumb">
+                        <li>
+                            <img src="images/icon/home.svg" alt="Trang chủ"><a href="#">Trang chủ</a>
+                        </li>
+                        <li>
+                            Kết luận thanh tra
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="section-title">
+                        <img src="images/icon/newspaper.svg" alt="">Kết luận thanh tra
+                    </div>
+                    <div class="form-search-tt search-home">
+                        <h4>Tìm kiếm</h4>
+                        <form method="POST" class="d-flex justify-content-center im">
+                            <div class="row justify-content-center w-100">
+                                <label for="keyword" class="col-md-2 col-form-label">Từ khoá</label>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" placeholder="Nhập từ khóa" id="keyword">
+                                </div>
+                            </div>
+                            <div class="row justify-content-center w-100">
+                                <label for="type" class="col-md-2 col-form-label">Lĩnh vực</label>
+                                <div class="col-md-8">
+                                    <select class="form-select" aria-label="Default select example" id="type">
+                                        <option selected>Tất cả</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row di justify-content-center w-100">
+                                <label for="position" class="col-md-2 col-form-label">Tỉnh/ TP</label>
+                                <div class="col-md-8">
+                                    <select class="form-select" aria-label="Default select example" id="position">
+                                        <option selected>Tất cả</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="list-btn justify-content-center d-flex">
+                                <button type="submit" class="btn-form btn-search">Tìm kiếm</button>
+                                <a class="btn-form btn-search btn-clear-g" href="#">Nhập lại</a>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="row list-content">
+                        <div class="list-content-childs">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <p>
+                                        <a href="#">Kết luận thanh tra việc thực hiện các quy định của pháp luật về phòng, chống xâm hại trẻ em trên địa bàn tỉnh Vĩnh Phúc</a></p>
+                                    <span>THÀNH PHỐ HÀ NỘI <time>( 16/02/2022 )</time></span>
+                                </li>
+                                <li class="list-group-item">
+                                    <p><a href="#">Kết luận thanh tra việc thực hiện các quy định của pháp luật về phòng, chống xâm hại trẻ em trên địa bàn tỉnh Vĩnh Phúc</a></p>
+                                    <span>THÀNH PHỐ HÀ NỘI <time>( 16/02/2022 )</time></span>
+                                </li>
+                                <li class="list-group-item">
+                                    <p><a href="#">Kết luận thanh tra việc thực hiện các quy định của pháp luật về phòng, chống xâm hại trẻ em trên địa bàn tỉnh Vĩnh Phúc</a></p>
+                                    <span>THÀNH PHỐ HÀ NỘI <time>( 16/02/2022 )</time></span>
+                                </li>
+                                <li class="list-group-item">
+                                    <p><a href="#">Kết luận thanh tra việc thực hiện các quy định của pháp luật về phòng, chống xâm hại trẻ em trên địa bàn tỉnh Vĩnh Phúc</a></p>
+                                    <span>THÀNH PHỐ HÀ NỘI <time>( 16/02/2022 )</time></span>
+                                </li>
+                                <li class="list-group-item">
+                                    <p><a href="#">Kết luận thanh tra việc thực hiện các quy định của pháp luật về phòng, chống xâm hại trẻ em trên địa bàn tỉnh Vĩnh Phúc</a></p>
+                                    <span>THÀNH PHỐ HÀ NỘI <time>( 16/02/2022 )</time></span>
+                                </li>
+                                <li class="list-group-item">
+                                    <p><a href="#">Kết luận thanh tra việc thực hiện các quy định của pháp luật về phòng, chống xâm hại trẻ em trên địa bàn tỉnh Vĩnh Phúc</a></p>
+                                    <span>THÀNH PHỐ HÀ NỘI <time>( 16/02/2022 )</time></span>
+                                </li>
+                                <li class="list-group-item">
+                                    <p><a href="#">Kết luận thanh tra việc thực hiện các quy định của pháp luật về phòng, chống xâm hại trẻ em trên địa bàn tỉnh Vĩnh Phúc</a></p>
+                                    <span>THÀNH PHỐ HÀ NỘI <time>( 16/02/2022 )</time></span>
+                                </li>
+                            </ul>
+                            <div class="row pt-2 d-flex mx-3">
+                                <div class="col-md-12">
+                                    <div class="d-inline-flex justify-content-center paginate_home">
+                                        <p class="m-0 pe-2 fs-6">Số trang </p>
+                                        <select class="" aria-label="Default select example">
+                                            <option selected="">5</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
+                                    </div>
+                                    <div class="d-inline-flex justify-content-center paginate_home">
+                                        <p class="m-0 pe-2 fs-6">trang </p>
+                                        <input type="number" class="col-md-1" value="1">
+                                        <p class="m-0 pe-2 fs-6">/60 </p>
+                                        <div class="col-md-1 me-2">
+                                            <button type="text" class="w-100 h-100" value="1"><</button>
+                                        </div>
+                                        <div class="col-md-1">
+                                            <button type="text" class="w-100 h-100" value="1">></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row pt-5">
+                                <div class="col-md-12 d-flex justify-content-center pt-4 pb-5 mx-3">
+                                    <div class="list-btn list-btn-send">
+                                        <button class="btn-problem">
+                                            <div class="d-flex justify-content-center">
+                                                <div class="img-btn"></div>
+                                                <p class="m-0 pe-1">Các vấn đề thường gặp</p>
+                                            </div>
+                                        </button>
+                                        <button class="btn-question" type="button" data-bs-toggle="modal" data-bs-target="#questionModal">
+                                            <span class="img-btn"></span>
+                                            <p>Gửi câu hỏi</p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--<div class="pagination">
+                                <a href="#"><< </a>
+                                <a href="#"><</a>
+                                <a href="#" class="active">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#">></a>
+                                <a href="#">>></a>
+                            </div>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="sidebar">
+                        <a href="#"><img class="mb-4" src="images/8017.png" alt=""></a>
+                        <a href="#"><img class="mb-4" src="images/Artboard 1 copy 2.png" alt=""></a>
+                        <a href="#"><img class="mb-4" src="images/Artboard 1 copy 3.png" alt=""></a>
+                        <a href="#"><img class="mb-4" src="images/Artboard 1 copy.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="brand-footer">
+                        <img src="images/logo.png" alt="">
+                        <p>BỘ LAO ĐỘNG - THƯƠNG BINH VÀ XÃ HỘI</p>
+                        <p>HỆ THỐNG THÔNG TIN BỘ VỚI NGƯỜI DÂN VÀ DOANH NGHIỆP</p>
+                    </div>
+                    <div class="address">
+                        <p>Địa chỉ: 12 Ngô Quyền, Phường Tràng Tiền, Quận Hoàn Kiếm, TP. Hà Nội<br/> Điện thoại: (024) 62703645 - Fax: (024) 6270 3609<br/> Email: tiepnhanykien@molisa.gov.vn
+                        </p>
+                    </div>
+                    <div class="copyright">
+                        © Bản quyền thuộc về Bộ Lao động - Thương binh và Xã hội
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Custom JS-->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
