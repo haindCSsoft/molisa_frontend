@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cổng TTĐT Bộ Lao động- Thương binh và Xã hội</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <!--Font awesome-->
+    <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.css">
+    <!-- JS -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="header-top">
+                    <a class="navbar-brand" href="#">
+                        <h1>
+                            <img src="images/logo.png" alt="">
+                        </h1>
+                    </a>
+                    <div class="text-head">
+                        <p>Bộ lao động - Thương binh và xã hội</p>
+                        <p>Hệ thống thông tin bộ với người dân và doanh nghiệp</p>
+                    </div>
+                    <div class="nav-login">
+                        <!--Before login-->
+                        <a href="http://localhost" class="button-login">Đăng nhập</a>
+                        <a href="#" class="button-login">Đăng ký</a>
+                        <!--After login-->
+                        <!--<form action="https://localhost.php" method="post" class="after-login">
+                            <div class="user-login"><i class="fa fa-user" aria-hidden="true"></i>Xin chào HHHHHHH,</div>
+                            <button class="button-login">Đăng xuất</button>
+                        </form>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Nav menu-->
+    <div class="nav-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-expand-lg navbar-light static-top nav-vn">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav menu-left">
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="#">Trang chủ</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navbarDarkDropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Phản ánh kiến nghị, câu hỏi
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                                        <a class="dropdown-item" href="phan_anh_kien_nghi_cau_hoi.html">Phản ánh 1</a>
+                                        <a class="dropdown-item" href="phan_anh_kien_nghi_cau_hoi2.html">Phản ánh 2</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="cu_tri_bdqh.html">Cử tri - ĐBQH</a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="ket_luan_thanh_tra.html">Kết luận thanh tra</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="faq.html">FAQ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="ho_tro.html">Hỗ trợ</a>
+                                </li>
+                            </ul>
+                            <div class="input-group bd-search">
+                                <input type="text" class="form-control" placeholder="Tìm kiếm">
+                                <img src="images/icon/search.svg" alt="">
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb -->
+    <div class="container bg-breadcrumb">
+        <div class="row">
+            <div class="col-md-12">
+                <nav>
+                    <ol class="breadcrumb">
+                        <li>
+                            <img src="images/icon/home.svg" alt="Trang chủ"><a href="#">Trang chủ</a>
+                        </li>
+                        <li>
+                            Hỗ trợ
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="container">
+            <div class="row mb-5">
+                <!--Sidebar-->
+                <div class="col-md-3 pe-2">
+                   <img src="images/hotline.png" alt="" class="w-100">
+                </div>
+                <!--End sidebar-->
+                <div class="col-md-9 p-0">
+                    <div class="section-title">
+                        <img src="images/icon/newspaper.svg" alt="">NHÓM CÂU HỎI CHUNG
+                    </div>
+                    <div class="list-dropdown pe-4">
+                        <div class="accordion-item mb-2">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <img src="images/icon/letter-2.svg" alt="" class="me-2">An toàn vệ sinh lao động
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        Luật an toàn, vệ sinh lao động quy định như thế nào về quyền và nghĩa vụ về an toàn, vệ sinh lao động của người lao động?
+                                    </a>
+                                </div>
+                                <div class="accordion-body">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        Luật an toàn, vệ sinh lao động quy định như thế nào về quyền và nghĩa vụ về an toàn, vệ sinh lao động của người lao động?
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item mb-2">
+                            <h2 class="accordion-header" id="heading3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                    <img src="images/icon/letter-2.svg" alt="" class="me-2">Giáo dục nghề nghiệp
+                                </button>
+                            </h2>
+                            <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Luật an toàn, vệ sinh lao động quy định như thế nào về quyền và nghĩa vụ về an toàn, vệ sinh lao động của người lao động?
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item mb-2">
+                            <h2 class="accordion-header" id="heading4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                    <img src="images/icon/letter-2.svg" alt="" class="me-2">Bảo trợ xã hội
+                                </button>
+                            </h2>
+                            <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Luật an toàn, vệ sinh lao động quy định như thế nào về quyền và nghĩa vụ về an toàn, vệ sinh lao động của người lao động?
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item mb-2">
+                            <h2 class="accordion-header" id="heading5">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                    <img src="images/icon/letter-2.svg" alt="" class="me-2">bÌNH ĐẲNG GIỚI
+                                </button>
+                            </h2>
+                            <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Luật an toàn, vệ sinh lao động quy định như thế nào về quyền và nghĩa vụ về an toàn, vệ sinh lao động của người lao động?
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row pt-2 d-flex mx-3">
+                            <div class="col-md-12">
+                                <div class="d-inline-flex justify-content-center paginate_home">
+                                    <p class="m-0 pe-2 fs-6">Số trang </p>
+                                    <select class="" aria-label="Default select example">
+                                        <option selected="">5</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+                                <div class="d-inline-flex justify-content-center paginate_home">
+                                    <p class="m-0 pe-2 fs-6">trang </p>
+                                    <input type="number" class="col-md-1" value="1">
+                                    <p class="m-0 pe-2 fs-6">/60 </p>
+                                    <div class="col-md-1 me-2">
+                                        <button type="text" class="w-100 h-100" value="1"><</button>
+                                    </div>
+                                    <div class="col-md-1">
+                                        <button type="text" class="w-100 h-100" value="1">></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row pt-5">
+                            <div class="col-md-12 d-flex justify-content-center pt-4 pb-5 mx-3">
+                                <div class="list-btn list-btn-send">
+                                    <button class="btn-problem">
+                                        <div class="d-flex justify-content-center">
+                                            <div class="img-btn"></div>
+                                            <p class="m-0 pe-1">Các vấn đề thường gặp</p>
+                                        </div>
+                                    </button>
+                                    <button class="btn-question" type="button" data-bs-toggle="modal" data-bs-target="#questionModal">
+                                        <span class="img-btn"></span>
+                                        <p>Gửi câu hỏi</p>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-md-12">
+                    <a href="#"><img src="images/banner-gui-cau-hoi.png" alt=""></a>
+                </div>
+            </div>
+            <div class="row mb-3 mb-md-5">
+                <div class="col-md-5 mb-3">
+                    <div class="section-title">
+                        <img src="images/icon/letter-2.svg" alt="">Văn bản
+                    </div>
+                    <div class="scroll-menu home">
+                        <ul>
+                            <li>
+                                <a href="#">Đây là chính sách giảm mức đóng bảo hiểm tai nạn lao động, bệnh . . .</a>
+                            </li>
+                            <li>
+                                <a href="#">Đây là chính sách giảm mức đóng bảo hiểm tai nạn lao động, bệnh . . .</a>
+                            </li>
+                            <li>
+                                <a href="#">Đây là chính sách giảm mức đóng bảo hiểm tai nạn lao động, bệnh . . .</a>
+                            </li>
+                            <li>
+                                <a href="#">Đây là chính sách giảm mức đóng bảo hiểm tai nạn lao động, bệnh . . .</a>
+                            </li>
+                            <li>
+                                <a href="#">Đây là chính sách giảm mức đóng bảo hiểm tai nạn lao động, bệnh . . .</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-5 offset-md-2">
+                    <div class="section-title">
+                        <img src="images/icon/letter-2.svg" alt="">Báo cáo nhanh
+                    </div>
+                    <div class="scroll-menu home chart-small">
+                        <div id="chartdiv"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3 mb-md-5">
+                <div class="col-md-5 mb-3 mb-md-0">
+                    <div class="section-title">
+                        <img src="images/icon/letter-2.svg" alt="">VIDEO
+                    </div>
+                    <div class="scroll-menu home">
+                        <div class="list-video">
+                            <div class="item">
+                                <figure>
+                                    <img src="images/video-thumb.jpg" alt="">
+                                </figure>
+                                <h6><a href="#">Thực hiện dịch vụ công hỗ trợ người lao động chấm dứt hợp đồng lao động nhưng không đủ điều kiện hưởng trợ cấp thất nghiệp</a></h6>
+                            </div>
+                            <div class="item">
+                                <figure>
+                                    <img src="images/video-thumb.jpg" alt="">
+                                </figure>
+                                <h6><a href="#">Thực hiện dịch vụ công hỗ trợ người lao động chấm dứt hợp đồng lao động nhưng không đủ điều kiện hưởng trợ cấp thất nghiệp</a></h6>
+                            </div>
+                            <div class="item">
+                                <figure>
+                                    <img src="images/video-thumb.jpg" alt="">
+                                </figure>
+                                <h6><a href="#">Thực hiện dịch vụ công hỗ trợ người lao động chấm dứt hợp đồng lao động nhưng không đủ điều kiện hưởng trợ cấp thất nghiệp</a></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 offset-md-2">
+                    <div class="section-title">
+                        <img src="images/icon/letter-2.svg" alt="">INFOGRAPHIC
+                    </div>
+                    <div class="scroll-menu home">
+                        <div class="list-video">
+                            <div class="item">
+                                <figure>
+                                    <img src="images/info-thumb.jpg" alt="">
+                                </figure>
+                                <h6><a href="#">Thực hiện dịch vụ công hỗ trợ người lao động chấm dứt hợp đồng lao động nhưng không đủ điều kiện hưởng trợ cấp thất nghiệp</a></h6>
+                            </div>
+                            <div class="item">
+                                <figure>
+                                    <img src="images/video-thumb.jpg" alt="">
+                                </figure>
+                                <h6><a href="#">Thực hiện dịch vụ công hỗ trợ người lao động chấm dứt hợp đồng lao động nhưng không đủ điều kiện hưởng trợ cấp thất nghiệp</a></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal noi dung cu tri-->
+        <div class="modal fade modal-kien-nghi" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header section-title">
+                        <img src="images/icon/letter.svg" alt="">NỘI DUNG Kết luận thanh tra
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h5>Kết luận về việc chấp hành các quy định của pháp luật về quản lý cai nghiện ma túy tại Cơ sở cai nghiện ma túy số 1</h5>
+                        <div class="question d-flex mt-4 pb-4">
+                            <figure>
+                                <img src="images/icon/user.png" alt="">
+                            </figure>
+                            <div class="content">
+                                <h6>Nội dung:</h6>
+                                <div class="pb-3">
+                                    Kết luận về việc chấp hành các quy định của pháp luật về quản lý cai nghiện ma túy tại Cơ sở cai nghiện ma túy số 1
+                                </div>
+                                <hr />
+                                <div class="attach">
+                                    <img src="images/icon/attach.svg" alt="" class="me-2"><b>File đính kèm: </b> <span>123456.pdf</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-title mt-4">
+                            <img src="images/icon/letter-2.svg" alt="">Kết luận thanh tra cùng lĩnh vực
+                        </div>
+                        <div class="related-tt">
+                            <div class="item">
+                                <h6><a href="#">Kết luận thanh tra về việc chấp hành các quy định của pháp luật về quản lý cai nghiện ma túy tại Cơ sở cai nghiện ma túy Phước Bình</a></h6>
+                                <span>(17/07/2020)</span>
+                            </div>
+                            <div class="item">
+                                <h6><a href="#">Kết luận thanh tra về việc chấp hành các quy định của pháp luật về quản lý cai nghiện ma túy tại Cơ sở cai nghiện ma túy Phước Bình</a></h6>
+                                <span>(17/07/2020)</span>
+                            </div>
+                            <div class="item">
+                                <h6><a href="#">Kết luận thanh tra về việc chấp hành các quy định của pháp luật về quản lý cai nghiện ma túy tại Cơ sở cai nghiện ma túy Phước Bình</a></h6>
+                                <span>(17/07/2020)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="brand-footer">
+                        <img src="images/logo.png" alt="">
+                        <p>BỘ LAO ĐỘNG - THƯƠNG BINH VÀ XÃ HỘI</p>
+                        <p>HỆ THỐNG THÔNG TIN BỘ VỚI NGƯỜI DÂN VÀ DOANH NGHIỆP</p>
+                    </div>
+                    <div class="address">
+                        <p>Địa chỉ: 12 Ngô Quyền, Phường Tràng Tiền, Quận Hoàn Kiếm, TP. Hà Nội<br/> Điện thoại: (024) 62703645 - Fax: (024) 6270 3609<br/> Email: tiepnhanykien@molisa.gov.vn
+                        </p>
+                    </div>
+                    <div class="copyright">
+                        © Bản quyền thuộc về Bộ Lao động - Thương binh và Xã hội
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Custom JS-->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
