@@ -42,31 +42,31 @@
         <div class="container">
             <div class="row d-flex justify-content-center form-login">
                 <div class="col-md-8">
-                    <form role="form mw-80">
+                    <form role="form mw-80" action="" method="post">
                         <div class="form-group py-3">
                             <label for="username" class="fw-bold fs-5 mb-2"> Tên đăng nhập </label>
-                            <input type="text" class="form-control border border-dark rounded px-4 py-3" name="username" id="username" required="required" placeholder="Tên đăng nhập">
+                            <input type="text" class="form-control border border-dark rounded px-4 py-3" name="username" id="username" placeholder="Tên đăng nhập" required />
                         </div>
                         <div class="form-group py-3">
                             <label for="fullname" class="fw-bold fs-5 mb-2"> Họ và tên </label>
-                            <input type="text" class="form-control border border-dark rounded px-4 py-3" name="fullname" id="fullname" placeholder="Nhập họ và tên " required="required">
+                            <input type="text" class="form-control border border-dark rounded px-4 py-3" name="fullname" id="fullname" placeholder="Nhập họ và tên " required/>
                         </div>
                         <div class="form-group py-3">
                             <label for="email" class="fw-bold fs-5 mb-2"> Email </label>
-                            <input type="email" class="form-control border border-dark rounded px-4 py-3" name="email" id="email" required="required" placeholder="Nhập thư điện tử ">
+                            <input type="email" class="form-control border border-dark rounded px-4 py-3" name="email" id="email" placeholder="Nhập thư điện tử " required />
                         </div>
                         <div class="form-group py-3">
                             <label for="phone" class="fw-bold fs-5  mb-2"> Điện thoại </label>
-                            <input type="number" class="form-control border border-dark rounded px-4 py-3" name="phone" id="phone" required="required" placeholder="Nhập số điện thoại ">
+                            <input type="number" class="form-control border border-dark rounded px-4 py-3" name="phone" id="phone" placeholder="Nhập số điện thoại" required />
                         </div>
                         <div class="form-group py-3">
                             <label for="address" class="fw-bold fs-5 mb-2"> Địa chỉ liên hệ  </label>
-                            <input type="text" class="form-control border border-dark rounded px-4 py-3" placeholder="Nhập địa chỉ liên hệ" id="address" required="required" name="address">
+                            <input type="text" class="form-control border border-dark rounded px-4 py-3" placeholder="Nhập địa chỉ liên hệ" id="address" name="address" required />
                         </div>
                         <div class="form-group py-3">
                             <div class="row">
                                 <div class="col-md-4 dropdown_login">
-                                    <select class="form-select border border-dark rounded px-4 py-3" aria-label="Default select example" name="province" id="province">
+                                    <select class="form-select border border-dark rounded px-4 py-3" aria-label="Default select example" name="province" id="province" required>
                                         <option selected>Tỉnh/TP</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -74,7 +74,7 @@
                                     </select>
                                 </div>
                                 <div class="col-md-4 dropdown_login d-flex justify-content-center">
-                                    <select class="form-select border border-dark rounded px-4 py-3" aria-label="Default select example" name="country" id="country">
+                                    <select class="form-select border border-dark rounded px-4 py-3" aria-label="Default select example" name="country" id="country" required>
                                         <option selected>Quận huyện</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -82,7 +82,7 @@
                                     </select>
                                 </div>
                                 <div class="col-md-4 dropdown_login d-flex justify-content-end">
-                                    <select class="form-select border border-dark rounded px-4 py-3" aria-label="Default select example" name="wards" id="wards">
+                                    <select class="form-select border border-dark rounded px-4 py-3" aria-label="Default select example" name="wards" id="wards" required>
                                         <option selected>Phường xã</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -115,11 +115,11 @@
                         </div>
                         <div class="form-group py-3 ">
                             <label for="password" class="fw-bold fs-5 mb-2 "> Mật khẩu </label>
-                            <input type="password" class="form-control border border-dark rounded px-4 py-3" name="password " id="password" placeholder="Mật khẩu gồm 8 ký tự: Chữ in hoa, chữ thường, số và ký tự đặc biệt. " required="required ">
+                            <input type="password" class="form-control border border-dark rounded px-4 py-3" name="password " id="password" placeholder="Mật khẩu gồm 8 ký tự: Chữ in hoa, chữ thường, số và ký tự đặc biệt. " required />
                         </div>
                         <div class="form-group py-3 ">
                             <label for="re-password" class="fw-bold fs-5 mb-2 "> Nhập lại mật khẩu </label>
-                            <input type="password" class="form-control border border-dark rounded px-4 py-3" name="re-password " id="re-password" placeholder="Nhập lại mật khẩu " required="required ">
+                            <input type="password" class="form-control border border-dark rounded px-4 py-3" name="re-password " id="re-password" placeholder="Nhập lại mật khẩu " required />
                         </div>
                         <div class="list-btn justify-content-center d-flex py-5 ">
                             <a href="https://google.com" class="btn-block btn-whilte  rounded me-5">Đăng nhập </a>
